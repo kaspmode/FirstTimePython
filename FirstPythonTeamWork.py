@@ -14,3 +14,24 @@ for n in range(101):
         
 
 #First Progrom By KAS.P =================================================>
+
+#First Program By Weiss.S ,./--\.,  <-- this is ascii batman
+
+#This program generate a Lorem Ipsum paragraph from a random number for characters (0 to 651)
+import random #random.randint wont work without it
+
+
+def WeissRandLorem():#define functin name
+    ipsumStrNum = random.randint(1,651)#this will hold the random int
+    #this row is the lorem ipsum paragraph
+    ipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut nisi consectetur, accumsan leo vel, efficitur risus. Aenean sit amet nisi nec tortor blandit scelerisque. Nulla scelerisque turpis vel leo hendrerit fringilla. Nullam tristique sem ac mauris sodales dictum. Suspendisse arcu metus, hendrerit pretium cursus non, eleifend at libero. Donec sed ullamcorper justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas ut ante velit. Nulla quis leo in lorem pretium ultrices. Quisque luctus porta metus eu mattis. Proin dictum tellus risus, vitae sagittis erat condimentum eu. Nullam posuere est nec justo dapibus consequat."
+    ipsList = list(ipsum)#the list command break apart the string to a list a of characters ['L', 'o', ..etc]
+    new = ''.join(ipsList[0:ipsumStrNum:1])
+    #joining the list back together using brackets [x,y,z]
+    #where x is the place to start from, y is the place to stop, z is the stepper
+    #z = 1 meanning it will go one iter at a time
+    print (new)
+
+WeissRandLorem()#Calling the function
+
+#(c)For personal use only (lol, rush B)
