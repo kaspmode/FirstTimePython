@@ -11,11 +11,12 @@ magicNumber = 26 # 26 is the Magic number
 for n in range(101):
     if n is magicNumber:
         print("This Magic Number Is :" , n )
+        print("") #down a line in console 
         
 
 #First Progrom By KAS.P =================================================>
 
-#First Program By Weiss.S ,./--\.,  <-- this is ascii batman
+#First Program By Weiss.S ,./--\.,  <-- this is ascii batman 
 
 #This program generate a Lorem Ipsum paragraph from a random number for characters (0 to 651)
 import random #random.randint wont work without it
@@ -31,7 +32,35 @@ def WeissRandLorem():#define functin name
     #where x is the place to start from, y is the place to stop, z is the stepper
     #z = 1 meanning it will go one iter at a time
     print (new)
+    print("")#down a line in console 
 
 WeissRandLorem()#Calling the function
 
-#(c)For personal use only (lol, rush B)
+#(c)For personal use only (lol, rush B)  = hahaha LOL... 
+
+
+# Progrom Number Two By KAS.P ===> By the way My D9 ascii Just run over your ascii batman ...
+
+#                O
+#        /~~~|#|]|=\|---\__
+#      |-=_____________  |\\ ,              
+#     I|_/,-.-.-.-.-,-.\_|='(   ,./--\.,            
+#        ( o )( o )( o )     \              
+#         `-'-'-'-'-`-'
+
+
+
+# Program Name : BitCoin To Usd Calculator
+
+def BitCoin_To_USD(btc):# A simple Function Which receives int value
+    amount = btc * 5680 # Mathematical action
+    print("Your Bitcoin worth : ",amount , "$")# Print the The result
+
+# To use Just Call the Function Name and Give The Amount in BTC 
+
+BitCoin_To_USD(5)
+
+
+# Progrom Number Two By KAS.P =================================================>  
+
+
