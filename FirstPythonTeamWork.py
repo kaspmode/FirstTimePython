@@ -61,6 +61,31 @@ def BitCoin_To_USD(btc):# A simple Function Which receives int value
 BitCoin_To_USD(5)
 
 
-# Progrom Number Two By KAS.P =================================================>  
+# Progrom Number Two By KAS.P =================================================>
 
+#First Program By Weiss.S ,./--\.,  
 
+# \_\_    _/_/
+#     \__/
+#     (oo)\_______
+#     (__)\       )\/\
+#         ||-----||
+#         ||     ||
+#PLEASE DO NOT FEED THE DEER
+
+#a simple program that get a sentence, then it run a loop looking for letters that match the ones in the []list
+word = input("Give me a sentence and i will let you know how which and how many vowels it has :")
+vowels =['a', 'e', 'i', 'o', 'u']#a simple list, nothing special
+found = {}#this is called dictionary, or in short dict (how pythong programmers call it
+          #it hols sets of keys and values like: color : green, size : big  (etc)
+          #you can think of it as endless rows with 2 coloums
+for letter in word:
+    if letter in vowels:
+        found.setdefault(letter, 0)#set default is actually a command that replace this if sentence:
+                        #if letter in found: found[letter] +=1 else found[letter] = 0.
+                        #if we wont use it we'll get an error cause were trying to enter value to a missing key
+        found[letter] += 1## too bad python doesnt have the ++ operator, we have to +=
+
+for k, v in sorted(found.items()):#we use the function sorted which sort a dictionary data type, otherwise
+                                #we wont have any order
+    print (k, 'was found', v, 'times.')
