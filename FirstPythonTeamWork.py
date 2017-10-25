@@ -14,7 +14,7 @@ for n in range(101):
         print("") #down a line in console 
         
 
-#First Progrom By KAS.P =================================================>
+#First Program By KAS.P =================================================>
 
 #First Program By Weiss.S ,./--\.,  <-- this is ascii batman 
 
@@ -39,7 +39,7 @@ WeissRandLorem()#Calling the function
 #(c)For personal use only (lol, rush B)  = hahaha LOL... 
 
 
-# Progrom Number Two By KAS.P ===> By the way My D9 ascii Just run over your ascii batman ...
+# Program Number Two By KAS.P ===> By the way My D9 ascii Just run over your ascii batman ...
 
 #                O
 #        /~~~|#|]|=\|---\__
@@ -61,7 +61,7 @@ def BitCoin_To_USD(btc):# A simple Function Which receives int value
 BitCoin_To_USD(5)
 
 
-# Progrom Number Two By KAS.P =================================================>
+# Program Number Two By KAS.P =================================================>
 
 #First Program By Weiss.S ,./--\.,  
 
@@ -85,7 +85,43 @@ for letter in word:
                         #if letter in found: found[letter] +=1 else found[letter] = 0.
                         #if we wont use it we'll get an error cause were trying to enter value to a missing key
         found[letter] += 1## too bad python doesnt have the ++ operator, we have to +=
-
+print("")
 for k, v in sorted(found.items()):#we use the function sorted which sort a dictionary data type, otherwise
                                 #we wont have any order
     print (k, 'was found', v, 'times.')
+    print("")
+
+
+
+# Program Number Third By KAS.P =================================================>
+
+#                           
+#        .::::::::::.                         .::::::::::.
+#      .::::''''''::::.                      .::::''''''::::.
+#    .:::'          `::::....          ....::::'          `:::.
+#   .::'             `:::::::|        |:::::::'             `::.
+#  .::|               |::::::|_ ___ __|::::::|               |::.
+#  `--'               |::::::|_()__()_|::::::|               `--'
+#   :::               |::-o::|        |::o-::|               :::
+#   `::.             .|::::::|        |::::::|.             .::'
+#    `:::.          .::\-----'        `-----/::.          .:::'
+#      `::::......::::'                      `::::......::::'
+#        `::::::::::'                          `::::::::::'
+#
+# You're Under a Rest For DEER Pornagrfy
+
+import random # you know this one
+import urllib.request # module defines functions and classes which help in opening URLs (mostly HTTP) in a complex world 
+
+#This A cool Program that can Download Any image from the Internet! Using the link of the image
+
+def download_web_imgae(url): # name of the Function
+    name = random.randrange(1,100) # give a Random Number for the image name
+    fulll_name = str(name) + ".jpg" # Take the Number and And converts it to a string
+    urllib.request.urlretrieve(url,fulll_name)# this is the Download Function , you need to give it two parameters for it to work
+    #First one : Url from the site your downloading the image , The second is the name of the file That you want to give the image
+
+#Just Insert Any image Link you want (Type Jpg) , The image will be downloaded to the Program Directory
+download_web_imgae("https://images.homedepot-static.com/productImages/5713319d-93ec-4bee-ac0f-5899086e2666/svn/gilmour-garden-hoses-1609728035-64_1000.jpg")
+
+# Program Number Third By KAS.P =================================================>
