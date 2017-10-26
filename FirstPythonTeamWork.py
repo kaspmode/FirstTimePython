@@ -1,3 +1,4 @@
+
 # Sup Let's start learning Python!!!
 
 #First Progrom By KAS.P =================================================>
@@ -51,19 +52,24 @@ WeissRandLorem()#Calling the function
 
 
 # Program Name : BitCoin To Usd Calculator
-
-def BitCoin_To_USD(btc):# A simple Function Which receives int value
-    amount = btc * 5680 # Mathematical action
-    print("Your Bitcoin worth : ",amount , "$")# Print the The result
+#def BitCoin_To_USD(btc):# A simple Function Which receives int value
+#    amount = btc * 5680 # Mathematical action
+#    print("Your Bitcoin worth : ",amount , "$")# Print the The result
+# FIXED - THE RIGHT WAY TO DO THIS
+convRate = 5680
+def BitCoin_To_USD(btc:int) -> int:
+    """Return the value of USD from BTC"""
+    return btc * convRate
 
 # To use Just Call the Function Name and Give The Amount in BTC 
 
-BitCoin_To_USD(5)
-
+btcToUsd = BitCoin_To_USD(5)
+print ("Your bitcoin worth is : ",btcToUsd, "$")
+help(BitCoin_To_USD)## this will show the function arguments and return data
 
 # Program Number Two By KAS.P =================================================>
 
-#First Program By Weiss.S ,./--\.,  
+#Second Program By Weiss.S ,./--\.,  
 
 # \_\_    _/_/
 #     \__/
@@ -125,3 +131,34 @@ def download_web_imgae(url): # name of the Function
 download_web_imgae("https://images.homedepot-static.com/productImages/5713319d-93ec-4bee-ac0f-5899086e2666/svn/gilmour-garden-hoses-1609728035-64_1000.jpg")
 
 # Program Number Third By KAS.P =================================================>
+
+#Program number three by Weiss.S ================================================>
+
+#   _/\____________________________,,,'
+#   '               ------------------fi
+#    \/__/ / / / ____|----------------fi
+#   /___/ / / / __---------'''''''''
+#   \_ )-------)  =     ---,,
+#     / /      /      ----,,
+#    / / O    / --    .
+#   / /___   / __--((__/
+#  / / ---  //
+# /  --__  /
+# \@______//
+#fUCK DA POL1CE
+
+
+def searchForLetters(phrase:str, letters:str) -> set:
+    """Function will return a set of letters which is common to the phrase and the letters given"""
+    return set(letters).intersection(set(phrase))
+#set command turn create a set object out of string,
+#intersection command return common values between two data structure
+
+print ('I will TRY to find letters which present in your first AND second sentences')
+input1 = input ('Give me the First sentence: ')
+input2 = input ('Give me the Second sentence: ')
+result = searchForLetters(input1, input2)
+print (result)
+
+#Program number three by Weiss.S ================================================>
+
