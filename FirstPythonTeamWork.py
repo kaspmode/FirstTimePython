@@ -63,7 +63,7 @@ def BitCoin_To_USD(btc:int) -> int:
 
 # To use Just Call the Function Name and Give The Amount in BTC 
 
-btcToUsd = BitCoin_To_USD(5)
+btcToUsd = BitCoin_To_USD(1)
 print ("Your bitcoin worth is : ",btcToUsd, "$")
 help(BitCoin_To_USD)## this will show the function arguments and return data
 
@@ -162,3 +162,52 @@ print (result)
 
 #Program number three by Weiss.S ================================================>
 
+
+# Program Number Four By KAS.P =================================================>
+#    _..._
+#     .'     '.
+#    /`\     /`\    |\
+#   (__|     |__)|\  \\  /|
+#   (     "     ) \\ || //
+#    \         /   \\||//
+#     \   _   /  |\|`  /
+#      '.___.'   \____/
+#       (___)    (___)
+#     /`     `\  / /
+#    |         \/ /
+#    | |     |\  /
+#    | |     | "`
+#    | |     |
+#    | |     |
+#    |_|_____|
+#   (___)_____)
+#   /    \   |
+#  /   |\|   |
+# //||\\  Y  |
+#|| || \\ |  |
+#|/ \\ |\||  |
+#    \||__|__|
+#     (___|___)
+#     /   A   \
+#    /   / \   \
+#   \___/   \___/
+#
+#I come in peace
+
+
+#How to Use Default Values for Arguments 
+
+def getGender(sex='Unknown'): # simple Function to test Default Values for Arguments (Using the ='Set Default Values')
+    if sex is 'm':
+        sex = "Male"
+        elif sex is 'f':
+        sex = "Feamle"
+        print(sex)
+        
+#Checking all possible scenarios
+getGender('m')
+getGender('f')
+getGender()
+
+
+# Program Number Four By KAS.P =================================================>
