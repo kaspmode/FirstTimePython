@@ -197,7 +197,7 @@ print (result)
 
 #How to Use Default Values for Arguments 
 
-def getGender(sex='Unknown'): # simple Function to test Default Values for Arguments (Using the ='Set Default Values')
+def OLDgetGender(sex='Unknown'): # simple Function to test Default Values for Arguments (Using the ='Set Default Values')
     if sex is 'm':
         sex = "Male"
         elif sex is 'f':
@@ -205,9 +205,100 @@ def getGender(sex='Unknown'): # simple Function to test Default Values for Argum
         print(sex)
         
 #Checking all possible scenarios
+OLDgetGender('m')
+OLDgetGender('f')
+OLDgetGender()
+
+# Program Number Four By KAS.P =================================================>
+# Program number five by Weiss.S + fix to program 4 ============================>
+
+#                   /|
+#                  / |,
+#             ,,,  o    \_
+#               "(    o   /
+#                 | \.
+#                 |      \
+#                 |';    )  )
+#                 W W F )___/
+#  MEWO...MEWO
+
+#Your elif was inside the if statement, another thing to keep in mind, is that a function should do as less as possible.
+#Meanning it should probably never print anything, the main code should print stuff based on functions return values
+#So i added another code getGender2 which does exactly that, we invoke it and we assign the funtion return value to a variable
+#then we can print whatever we want.
+
+def getGender(sex='Unknown'): # simple Function to test Default Values for Arguments (Using the ='Set Default Values')
+    if sex is 'm':
+        sex = "Male"
+    elif sex is 'f':
+        sex = "Feamle"
+    print(sex)
+        
+#Checking all possible scenarios
 getGender('m')
 getGender('f')
 getGender()
 
+def getGender2(sex='Unknown'):
+    if sex is 'm':
+        sex = "Male"
+    elif sex is 'f':
+        sex = "Feamle"
+    return sex
+        
+test1 = getGender2('m')
+test2 = getGender2('f')
+test3 = getGender2()
 
-# Program Number Four By KAS.P =================================================>
+print ("Using argument 'm' gives us: ",test1)
+print ("Using argument 'f' gives us: ",test2)
+print ("Using no argument gives us: ",test3)
+##################################################
+#Now, FOR THE MAIN EVENT OF THE EVENING..... MY... C0DE!
+
+import random
+
+#make a list of 20 random numbers from 0 to 100
+numbers = []
+for i in range (0,20):
+    numbers.append (random.randint(0,100))#Simple loop to append random number from 0 to 100 to the list
+numbers.sort(key=int)#sort the list from small the big
+print ("This is the generated random list : ")
+print (numbers)
+keyNumber= 65
+print ("This code will generate a new list made from the original list \n Appending only numbers smaller than: ",keyNumber)
+#I've added a BUG ;) the BUG will make this work but wont handle the list like we want when a special case occure
+#can you FIX IT?!?!?!
+def newListMaker (numbers:list, keyNumber:int) -> list:
+    #WILL ONLY WORK WITH A SORTED LIST! #WILL ONLY WORK WITH LIST OF 20 ITEMS! return a new list with numbers smaller than argument number
+    newList = []
+    flag = True#as long as flag is true, the loop will run, we first set it to true so it runs at least once
+    i = 0#counter, based on list with 20 items
+    while flag and i < 20:
+        flag = numbers[i] < keyNumber#if the list item is smaller than the keynumber we want flag to stay true so the while loop will
+                                    #run again, when we get to an item which is bigger than our number we want to stop the loop
+                                    #we are basing that fact given the list is ordered, the flag will turn false and this will be
+                                    #the last time the loop will run, but this time there will be another value eneter into the new list
+                                    #which is bigger than our keynumber, so we need to pop him out.
+        newList.append (numbers[i])
+        i += 1
+    newList.pop()
+    return newList
+            
+mylist = newListMaker (numbers, keyNumber)
+print (mylist)
+#ask user for input, integer between 0 and 100
+#create a new list with numbers from the first list who are less than the user input
+#print the list
+
+
+
+# Program number five by Weiss.S + fix to program 4 ============================>
+
+
+
+
+
+
+
+
